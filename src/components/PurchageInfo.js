@@ -25,7 +25,9 @@ const PurchageInfo = ({ count }) => {
         </div>
         <div className="total-count-price">
           <div className="total-count">총 수량 {count}개</div>
-          <div className="total-price color-blue">6,370원</div>
+          <div className="total-price color-blue">
+            {(count * 6370).toLocaleString('en-US')}원
+          </div>
         </div>
       </div>
     </div>

@@ -197,13 +197,13 @@ main {
 }
 
 .total-count-price {
-  width: 170px;
+  width: 190px;
   height: 22px;
   display: flex;
 }
 
 .total-count {
-  width: 85px;
+  width: 95px;
   height: 22px;
   font-size: 0.875rem;
   padding-right: 6px;
@@ -224,10 +224,11 @@ main {
 .total-price {
   font-size: 1.375rem;
   line-height: 22px;
-  width: 83px;
+  width: 100px;
   height: 22px;
   font-weight: 700;
   margin-left: 6px;
+  text-align: right;
 }
 .purchage-button {
   margin: auto;
