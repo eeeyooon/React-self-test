@@ -180,6 +180,7 @@ main {
   align-content: space-between;
   margin: 0;
   height: 22px;
+  position: relative;
 }
 
 .total-title {
@@ -190,6 +191,50 @@ main {
   font-size: 0.875rem;
   line-height: 14px;
   font-weight: 700;
+}
+
+.total-price-info-tooltip {
+  background-color: #ffffff;
+  width: 320px;
+  height: 76px;
+  font-size: 0.75rem;
+  padding: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border: 1px solid #dee0e3;
+  position: absolute;
+  z-index: 99;
+  top: 28px;
+  left: 0px;
+}
+
+.total-price-info-tooltip::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 85px;
+  border-color: #dee0e3 transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  z-index: 0;
+}
+
+.total-price-info-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 85px;
+  border-color: #ffffff transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  z-index: 1;
+}
+
+.total-price-info-tooltip svg {
+  position: absolute;
+  top: 18px;
+  right: 11px;
+  cursor: pointer;
 }
 
 .total-title span {
