@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProductCounter = ({ count, setCount }) => {
-  const minusCont = () => {
+  const minusCount = () => {
     if (count > 0) {
       setCount(count - 1);
     }
@@ -18,7 +18,7 @@ const ProductCounter = ({ count, setCount }) => {
       <button
         araia-label="상품 수량 빼기"
         className="minus-button"
-        onClick={minusCont}
+        onClick={minusCount}
       >
         <svg
           role="button"
