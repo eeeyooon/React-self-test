@@ -35,6 +35,6 @@ Product Purchage Card 디자인 시안을 복제(duplicate)한 후, UI를 React�
 
 ## 구현 결과
 
-![제품구매카드_결과물](https://user-images.githubusercontent.com/102462534/221393908-d10c8edf-d177-41e1-8f89-04f1baee5742.gif)
+![product-purchage-card](https://user-images.githubusercontent.com/102462534/221394886-8deb009a-62d6-4299-af1e-6ecb02ec76b5.gif)
 
 </br>
