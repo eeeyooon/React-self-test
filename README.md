@@ -17,4 +17,24 @@
 
 ## 제품 구매카드 UI
 
+Product Purchage Card 디자인 시안을 복제(duplicate)한 후, UI를 React를 사용해 구현합니다.
+
+[Product-Purchage-Card](https://www.figma.com/file/mugXqLwMI8b5DzZhIp7DAP/Product-Purchage-Card/duplicate)
+
 ![image](https://user-images.githubusercontent.com/102462534/221388565-7e44344a-1b74-486e-8704-9d30f96f2d12.png)
+
+<br/>
+
+## 유연한 레이아웃
+
+디자인 시안에 반영된 것처럼 뷰포트의 너비에 따라 레이아웃이 유연하게 반응하도록 구현합니다.
+
+![flexibility-layout](https://user-images.githubusercontent.com/102462534/221393953-031a603a-53ee-4f9e-b465-1456754580b9.gif)
+
+<br/>
+
+## 구현 결과
+
+![제품구매카드_결과물](https://user-images.githubusercontent.com/102462534/221393908-d10c8edf-d177-41e1-8f89-04f1baee5742.gif)
+
+</br>
