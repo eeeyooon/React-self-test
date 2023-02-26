@@ -12,6 +12,7 @@ const PurchageInfo = ({ count }) => {
             onClick={() => {
               setTooltipOpen(true);
             }}
+            className="total-price-info-button"
             aria-label="총 상품금액 안내사항 보기"
           >
             <svg
