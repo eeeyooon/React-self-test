@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const PurchageInfo = ({ count }) => {
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+
   return (
     <div className="purchage-info">
       <div className="total-info">
         <div className="total-title">
           총 상품 금액
-          <span aria-label="총 상품액 안내 사항 버튼">
+          <button
+            onClick={() => {
+              setTooltipOpen(true);
+            }}
+            aria-label="총 상품금액 안내사항 보기"
+          >
             <svg
               width="16"
               height="16"
@@ -21,29 +28,41 @@ const PurchageInfo = ({ count }) => {
               />
               <rect x="0.5" y="0.5" width="15" height="15" stroke="#DEE0E3" />
             </svg>
-          </span>
-          <div className="total-price-info-tooltip">
-            <span>
-              총 상품금액에
-              <span className="color-blue">
-                배송비는 포함되어 있지 않습니다.{' '}
-              </span>
-              <br />
-              결제시 배송비가 추가될 수 있습니다.
-            </span>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          </button>
+          {tooltipOpen && (
+            <div
+              className="total-price-info-tooltip"
+              aria-label="총 상품금액 안내사항"
             >
-              <path
-                d="M5.99999 6.70706L1.40379 11.3033L0.696686 10.5962L5.29288 5.99996L0.696688 1.40376L1.40379 0.696655L5.99999 5.29285L10.5962 0.696655L11.3033 1.40376L6.7071 5.99996L11.3033 10.5962L10.5962 11.3033L5.99999 6.70706Z"
-                fill="#333333"
-              />
-            </svg>
-          </div>
+              <span>
+                총 상품금액에
+                <span className="color-blue">
+                  &nbsp;배송비는 포함되어 있지 않습니다.{' '}
+                </span>
+                <br />
+                결제시 배송비가 추가될 수 있습니다.
+              </span>
+              <button
+                aria-label="총 상품금액 안내사항 닫기"
+                onClick={() => {
+                  setTooltipOpen(false);
+                }}
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.99999 6.70706L1.40379 11.3033L0.696686 10.5962L5.29288 5.99996L0.696688 1.40376L1.40379 0.696655L5.99999 5.29285L10.5962 0.696655L11.3033 1.40376L6.7071 5.99996L11.3033 10.5962L10.5962 11.3033L5.99999 6.70706Z"
+                    fill="#333333"
+                  />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
         <div className="total-count-price">
           <div className="total-count">총 수량 {count}개</div>
