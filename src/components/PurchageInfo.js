@@ -9,9 +9,15 @@ const PurchageInfo = ({ count }) => {
         <div className="total-title">
           총 상품 금액
           <button
-            onClick={() => {
-              setTooltipOpen(true);
-            }}
+            onClick={
+              tooltipOpen === true
+                ? () => {
+                    setTooltipOpen(false);
+                  }
+                : () => {
+                    setTooltipOpen(true);
+                  }
+            }
             className="total-price-info-button"
             aria-label="총 상품금액 안내사항 보기"
           >
