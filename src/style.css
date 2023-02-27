@@ -283,7 +283,6 @@ main {
 .purchage-button {
   margin: auto;
   cursor: pointer;
-  background-color: #03c75a;
   height: 48px;
   border-radius: 6px;
   display: flex;
@@ -291,6 +290,20 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.not-disable {
+  background-color: #03c75a;
+  cursor: pointer;
+}
+
+.not-disable:hover {
+  background-color: #0aae4f;
+}
+
+.disable {
+  background-color: #dee0e3;
+  cursor: auto;
 }
 
 .purchage-button > span {
